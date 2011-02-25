@@ -1,7 +1,7 @@
 # hardlink
 a simple command-line utility that implements hardlinks on Mac OsX
 
-to link: `hardlink source destination`
+to link: `hardlink source destination`  
 to unlink: `hardlink -u destination`
 
 ## Motivation
