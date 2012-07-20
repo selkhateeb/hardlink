@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <string.h>
 /*
-On Mac OSX, we can't create hard links using the ln command..
+On Mac OSX, we can't create hard links on directories using the ln command..
 
 Install:
  make
