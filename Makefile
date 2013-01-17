@@ -8,5 +8,5 @@ all:
 clean:
 	rm ${OUTPUT}
 
-install:
+install: all
 	cp ${OUTPUT} /usr/local/bin/
