@@ -15,7 +15,7 @@ int main(int argc, char* argv[]) {
         fprintf(stderr,"Usage:\thardlink source destination\n");
         fprintf(stderr,"\t  hard links the source directory to the destination\n");
         fprintf(stderr,"\thardlink -u destination\n");
-        fprintf(stderr,"\t  unlinks the destination directoy\n");
+        fprintf(stderr,"\t  unlinks the destination directory\n");
         return 1;
     }
     int ret = 0;
