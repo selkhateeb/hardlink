@@ -27,3 +27,7 @@ To create a hard link:
 
 To remove the link:
 - `hardlink -u destination`
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/selkhateeb/hardlink/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
