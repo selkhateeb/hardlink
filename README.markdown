@@ -16,6 +16,7 @@ questions.. and decided to create a lib out if it that everybody can use
 
 ## Installation
 - `git clone git://github.com/selkhateeb/hardlink.git`
+- `cd hardlink`
 - `make`
 - `sudo make install`
 
