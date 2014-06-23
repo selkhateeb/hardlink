@@ -30,5 +30,17 @@ To remove the link:
 - `hardlink -u destination`
 
 
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/selkhateeb/hardlink/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+## Limitations
+Hardlink can not be created under the same directory root.
+If you try to `hardlink` source directory to target directory under the same root you will get an error.
+```
+operation not permitted
+```
+to avoid that you should create additonal directory level
+```
+- /directory_root/
+   |-  /source_directory
+   |-  /parent_directory/
+         |- target_directory
+```
 
