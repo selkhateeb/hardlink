@@ -43,4 +43,5 @@ to avoid that you should create additonal directory level
    |-  /parent_directory/
          |- target_directory
 ```
+You cannot use hard links across volumes as mentioned by @dragonfax.
 
