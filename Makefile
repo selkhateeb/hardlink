@@ -1,9 +1,10 @@
 
-DESTDIR ?=
-PREFIX  ?= /usr
-BINDIR  ?= $(PREFIX)/bin
-MYCC     = $(GCC
-OUTPUT   = hardlink
+CURDIR  = $(PWD)
+DESTDIR = $(PREFIX)
+BINDIR  = $(PREFIX)/bin
+MYGCC   = $(GCC)
+OUTPUT  = hardlink
+README  = README.md
 C_FILES =  hardlink.c
 
 all:
@@ -13,4 +14,5 @@ clean:
 	rm ${OUTPUT}
 
 install: hardlink-osx
-	install -d  $(DESTDIR)$(BINDIR)
+	install -t ${DESTDIR} ${README} 
+	install -d ${DESTDIR} ${BINDIR}
