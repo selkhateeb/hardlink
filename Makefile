@@ -1,11 +1,15 @@
+# Makefile
+# hardlink-osx
+# Oct. 22, 2014
+
 DESTDIR = $(PREFIX)
 ifeq ($(DESTDIR),)
 DESTDIR=/usr/local
 endif
 BINDIR = $(addprefix $(DESTDIR)/,bin)
-NAME = hardlink-osx
+NAME = hln
 README  = README.md
-SOURCE =  hardlink.c
+SOURCE =  hln.c
 OUTPUT = $(addprefix $(PWD)/, $(NAME))
 COMPILER = $(GCC)
 ifeq ($(COMPILER),)
@@ -13,16 +17,15 @@ COMPILER=gcc
 endif
 
 all: 
-	-mkdir $(BINDIR) &>/dev/null
-	$(COMPILER) $(SOURCE) -o $(OUTPUT)
+	$(COMPILER) "$(SOURCE)" -o "$(OUTPUT)"
 
 install:  $(NAME)
-	install -v $(OUTPUT) $(BINDIR)
+	install -vb "$(OUTPUT)" "$(BINDIR)"
 
 install-homebrew:  $(NAME)
-	install -v $(README) $(OUTPUT) $(DESTDIR)
+	install -vb "$(README)" "$(OUTPUT)" "$(BINDIR)"
 
 .PHONY: clean
 
 clean:
-	-rm -f $(OUTPUT)
+	-rm -f "$(OUTPUT)"
