@@ -2,19 +2,19 @@
 #include <stdio.h>
 #include <string.h>
 /*
-On Mac OSX, we can't create hard links on directories using the ln command..
-
-Install:
- make
- sudo make install
+ * On Mac OSX, we can't create hard links on directories using the ln command..
+ *
+ * Install:
+ *  make
+ *  [sudo] make install
 */
 int main(int argc, char* argv[]) {
     //Make sure we have the right arguments
     if (argc != 3)
     {
-        fprintf(stderr,"Usage:\thardlink source destination\n");
+        fprintf(stderr,"Usage:\t%s source destination\n", argv[0]);
         fprintf(stderr,"\t  hard links the source directory to the destination\n");
-        fprintf(stderr,"\thardlink -u destination\n");
+        fprintf(stderr,"\t%s -u destination\n", argv[0]);
         fprintf(stderr,"\t  unlinks the destination directory\n");
         return 1;
     }
@@ -27,6 +27,6 @@ int main(int argc, char* argv[]) {
         ret = link(argv[1],argv[2]);
     
     if (ret != 0)
-        perror("hardlink");
+        perror(argv[0]);
     return ret;
 }

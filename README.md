@@ -15,6 +15,10 @@ questions.. and decided to create a lib out if it that everybody can use
 - You need [xCode](https://developer.apple.com/technologies/mac/#xcode) command line tools installed to use `make` command
 
 ## Installation
+- `brew install hardlink-osx`
+
+- Or withouit homebrew
+
 - `git clone git@github.com:jasonsyoung/hardlink-osx.git`
 - `cd hardlink-osx`
 - `make`
