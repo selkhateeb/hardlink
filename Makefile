@@ -1,5 +1,6 @@
 # Makefile
-# hardlink-osx
+# hardlink-osx 
+# output: hln
 # Oct. 22, 2014
 
 DESTDIR = $(PREFIX)
