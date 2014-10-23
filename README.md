@@ -1,8 +1,8 @@
-# hardlink
-a simple command-line utility that implements directory hardlinks on Mac OsX
+# hardlink-osx
+a simple command-line utility that implements directory hardlinks on Mac OSX
 
-to link: `hardlink source destination`  
-to unlink: `hardlink -u destination`
+to link: `hardlink-osx source destination`  
+to unlink: `hardlink-osx -u destination`
 
 ## Motivation
 I was trying to patch a third-party library and make the files available in our
@@ -15,24 +15,24 @@ questions.. and decided to create a lib out if it that everybody can use
 - You need [xCode](https://developer.apple.com/technologies/mac/#xcode) command line tools installed to use `make` command
 
 ## Installation
-- `git clone git://github.com/selkhateeb/hardlink.git`
-- `cd hardlink`
+- `git clone git@github.com:jasonsyoung/hardlink-osx.git`
+- `cd hardlink-osx`
 - `make`
-- `sudo make install`
+- `[sudo] make install`
 
 Note: in case you get error `directory /usr/local/bin does not exist`, just copy hardlink app into `/usr/bin` instead
 
 ## Usage
 To create a hard link:
-- `hardlink source destination`
+- `hardlink-osx source destination`
 
 To remove the link:
-- `hardlink -u destination`
+- `hardlink-osx -u destination`
 
 
 ## Limitations
 Hardlink can not be created under the same directory root.
-If you try to `hardlink` source directory to target directory under the same root you will get an error.
+If you try to `hardlink-osx` source directory to target directory under the same root you will get an error.
 ```
 operation not permitted
 ```
