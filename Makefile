@@ -21,10 +21,12 @@ all:
 	$(COMPILER) "$(SOURCE)" -o "$(OUTPUT)"
 
 install:  $(NAME)
-	install -vb "$(OUTPUT)" "$(BINDIR)"
+	install -v "$(NAME)" "$(BINDIR)"
 
 install-homebrew:  $(NAME)
-	install -vb "$(README)" "$(OUTPUT)" "$(BINDIR)"
+	-mkdir -p "$(BINDIR)" &>/dev/null
+	install -v "$(README)" "$(PREFIX)"
+	install -v "$(NAME)" "$(BINDIR)"
 
 .PHONY: clean
 
