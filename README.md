@@ -23,10 +23,13 @@ to type and does not conflict with any system I have checked.
 - You need [xCode](https://developer.apple.com/technologies/mac/#xcode) command line tools installed to use `make` command
 
 ## Installation
-- `brew install hln`
+### Using Homebrew
+After installing [homebrew](http://brew.sh/), you can simply issue this command in your terminal and hardlink will automatically install:
 
-- Or without homebrew
+- `brew install homebrew-osx`
 
+### Manually compiling
+- 
 - `git clone git@github.com:jasonsyoung/hardlink-osx.git`
 - `cd hardlink-osx`
 - `make`
