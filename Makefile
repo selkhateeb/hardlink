@@ -16,6 +16,9 @@ COMPILER = $(GCC)
 ifeq ($(COMPILER),)
 COMPILER=gcc
 endif
+ifeq ($(PREFIX),)
+PREFIX=./
+endif
 
 all: 
 	$(COMPILER) "$(SOURCE)" -o "$(OUTPUT)"
