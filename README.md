@@ -22,12 +22,12 @@ to type and does not conflict with any system I have checked.
 ### Using Homebrew
 After installing [homebrew](http://brew.sh/), you can simply issue this command in your terminal and hardlink will automatically install:
 
-- `brew install homebrew-osx`
+- `brew install hardlink-osx`
 
 ### Manually compiling
 - 
-- `git clone git@github.com:jasonsyoung/hardlink-osx.git`
-- `cd hardlink-osx`
+- `git clone https://github.com/selkhateeb/hardlink.git
+- `cd hardlink`
 - `make`
 - `[sudo] make install`
 
