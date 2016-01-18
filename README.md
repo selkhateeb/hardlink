@@ -26,7 +26,7 @@ After installing [homebrew](http://brew.sh/), you can simply issue this command 
 
 ### Manually compiling
 - 
-- `git clone https://github.com/selkhateeb/hardlink.git
+- `git clone https://github.com/selkhateeb/hardlink.git`
 - `cd hardlink`
 - `make`
 - `[sudo] make install`
