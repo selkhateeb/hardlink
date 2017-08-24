@@ -1,37 +1,36 @@
 # hardlink-osx
-a simple command-line utility that implements directory hardlinks on Mac OSX
+A simple command-line utility that implements directory hardlinks on Mac OSX
 
-to link: `hln source destination`  
+to link: `hln source destination`
 to unlink: `hln -u destination`
 
 ## Motivation
 I was trying to patch a third-party library and make the files available in our
 code directory without having to copy the files every time I patch it.
 
-I got the idea from some [stackoverflow](http://stackoverflow.com/questions/80875/what-is-the-bash-command-to-create-a-hardlink-to-a-directory-in-os-x)
-questions.. and decided to create a lib out if it that everybody can use
+I got the idea from the  [stackoverflow](http://stackoverflow.com/questions/80875/what-is-the-bash-command-to-create-a-hardlink-to-a-directory-in-os-x)
+question here and decided to create a lib out if it that anybody can use.
 
-## homebrew
-the binary is named `hln` due to the naming conflict previously mentioned, as well as it is easier
-to type and does not conflict with any system I have checked.
+## A note about the the `hln` binary name:
+The binary is named `hln` due to a naming conflict. It's also just easier to type and does not conflict with any other system I have checked.
 
 ## Requirements
-- You need [xCode](https://developer.apple.com/technologies/mac/#xcode) command line tools installed to use `make` command
+- You will need [xCode](https://developer.apple.com/technologies/mac/#xcode) command line tools installed to use `make` command
 
 ## Installation
 ### Using Homebrew
-After installing [homebrew](http://brew.sh/), you can simply issue this command in your terminal and hardlink will automatically install:
+After installing [homebrew](http://brew.sh/), you can simply issue this command in your terminal and hardlink will automatically install with:
 
 - `brew install hardlink-osx`
 
 ### Manually compiling
-- 
+-
 - `git clone https://github.com/selkhateeb/hardlink.git`
 - `cd hardlink`
 - `make`
 - `[sudo] make install`
 
-Note: in case you get error `directory /usr/local/bin does not exist`, just copy hardlink app into `/usr/bin` instead
+Note: If you get the error `directory /usr/local/bin does not exist`, just copy hardlink app into `/usr/bin` instead.
 
 ## Usage
 To create a hard link:
@@ -39,7 +38,6 @@ To create a hard link:
 
 To remove the link:
 - `hln -u destination`
-
 
 ## Limitations
 Hardlink can not be created under the same directory root.
@@ -54,4 +52,3 @@ to avoid that you should create additonal directory level
    |-  /parent_directory/
          |- target_directory
 ```
-
