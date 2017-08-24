@@ -24,7 +24,6 @@ After installing [homebrew](http://brew.sh/), you can simply issue this command 
 - `brew install hardlink-osx`
 
 ### Manually compiling
--
 - `git clone https://github.com/selkhateeb/hardlink.git`
 - `cd hardlink`
 - `make`
