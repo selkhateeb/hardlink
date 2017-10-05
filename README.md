@@ -49,7 +49,7 @@ WARNING: APFS (Apple File System) does not support hard links. If you plan on in
 
 Official documentation about this from Apple can be found [here](https://developer.apple.com/library/content/documentation/FileManagement/Conceptual/APFS_Guide/FAQ/FAQ.html) kindly provided by @luckman212
 
-Please see this issue [here](https://github.com/selkhateeb/hardlink/issues/31) for more information. Thanks for everybody contributing to this thread.
+Please see this issue [here](https://github.com/selkhateeb/hardlink/issues/31) for more information. Thanks to everybody for contributing to this thread.
 
 ### Directory
 Hardlink can not be created under the same directory root.
