@@ -40,7 +40,7 @@ To create a hard link:
 To remove the link:
 - `hln -u destination`
 
-<a name="limitations"></a>## Limitations
+<a name="limitations">## Limitations</a>
 
 ### File System
 
