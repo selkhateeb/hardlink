@@ -4,6 +4,8 @@ A simple command-line utility that implements directory hardlinks on Mac OSX
 to link: `hln source destination`
 to unlink: `hln -u destination`
 
+IMPORTANT UPDATE: Please see [limitations](#limitations) before using. Particulalry before installing MacOS High Sierra.
+
 ## Motivation
 I was trying to patch a third-party library and make the files available in our
 code directory without having to copy the files every time I patch it.
@@ -38,7 +40,17 @@ To create a hard link:
 To remove the link:
 - `hln -u destination`
 
-## Limitations
+<a name="limitations"></a>## Limitations
+
+### File System
+
+WARNING: APFS (Apple File System) does not support hard links. If you plan on installing MacOS High Sierra and want to continue using hardlink-osx, you will need to maintain your HFS+ file system.
+
+Official documentation about this from Apple can be found [here](https://developer.apple.com/library/content/documentation/FileManagement/Conceptual/APFS_Guide/FAQ/FAQ.html) kindly provided by @luckman212
+
+Please see this issue [here](https://github.com/selkhateeb/hardlink/issues/31) for more information. Thanks for everybody contributing to this thread.
+
+### Directory
 Hardlink can not be created under the same directory root.
 If you try to `hln` source directory to target directory under the same root you will get an error.
 ```
